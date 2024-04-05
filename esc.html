@@ -1,0 +1,41 @@
+<html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="dialog.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 27) //буква ESC
+            {
+                window.location.href = "indexDef.html";
+                cef.set_focus(false);
+            }
+                
+        });
+    </script>
+</head>
+
+<body style="background-image: url(image/background-black.png);display: inline-grid;">
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="location.href='indexDef.html'; cef.set_focus(false);">Продолжить</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="location.href='tune.html';">Тюнинг</button>
+
+
+</body></html>

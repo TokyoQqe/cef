@@ -1,0 +1,124 @@
+<html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="dialog.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 27) //буква ESC
+            {
+                window.location.href = "indexDef.html";
+                cef.set_focus(false);
+            }
+                
+        });
+
+        function blue() {
+            cef.emit("blue", "blue")
+        }
+
+        function white() {
+            cef.emit("white", "white")
+        }
+
+        function red() {
+            cef.emit("red", "red")
+        }
+
+        function pink() {
+            cef.emit("pink", "pink")
+        }
+
+        function yellow() {
+            cef.emit("yellown", "yellown")
+        }
+
+        function green() {
+            cef.emit("greenn", "greenn")
+        }
+
+        function delneon() {
+            cef.emit("delneon", "delneon")
+        }
+    </script>
+</head>
+
+<body style="background-image: url(image/background-black.png);display: inline-grid;">
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="blue();">Синий</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="white();">Белый</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="red();">Красный</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="pink();">Розовый</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="yellow();">Желтый</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="green();">Зелный</button>
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="delneon();">Удалить</button>
+
+
+<button style="
+    width: 622px;
+    height: 125px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 auto;
+" onclick="location.href='tune.html';">Назад</button>
+
+
+</body></html>

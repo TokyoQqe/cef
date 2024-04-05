@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="dialog.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style/hud.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/push.css">
+    <script src="../js/push.js"></script>
+    <script>
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 112) //буква ESC
+            {
+                window.location.href = "F1.html";
+            }
+                
+        });
+        $(this).keydown(function(eventObject){
+            if (eventObject.which == 120) //буква ESC
+            {
+                window.location.href = "esc.html";
+                cef.set_focus(true);
+            }
+                
+        });
+    </script>
+    <script type="text/javascript">
+        let vas = document.getElementById('ids');
+
+        cef.on("notifical:player:data", (headers, body, text, colors, hide, time) => {
+            Toast.add({header: headers, body, body: text, color: '#' + colors, autohide: hide, delay: time});
+        });
+
+        cef.on("notifical:success", (success) => {
+            if ( success ) 
+            {
+                vas.innerHTML = 'Кортез';
+                Toast.add({header: '1', body: '24', color: '#ff0000', autohide: true, delay: 5000});
+            }
+        });
+    </script>
+</head>
+<body style="
+">
+	<div id="hudik" class="hudik" style="display: 1;">
+		
+<img src="image/hud/hudHealthArmorBar.png" style="
+    margin-left: 1744px;
+    margin-top: 84px;
+"><img src="image/hud/hudHealthArmorBar.png" style="
+    margin-left: 1744px;
+    margin-top: 14px;
+">    
+    
+		<img class="guns" id="gunid" src="image/guns/1.png" width="100" style="
+    left: 1629px;
+">
+		<img class="wanteds" id="wanted" src="image/wanted/wanted-0.png" width="20" style="
+    left: 1830px;
+    top: 185px;
+">
+        
+
+<img src="image/hud/hudArmour.png" style="position: absolute;display: -webkit-box;margin-top: -51px;margin-left: 1850px;"><img src="image/hud/hudHealth.png" style="
+    position: absolute;
+    display: -webkit-box;
+    margin-top: -20px;
+    margin-left: 1850px;
+"><img src="image/hud/hudMoney.png" style="
+    position: absolute;
+    display: -webkit-box;
+    margin-top: 13px;
+    margin-left: 1841px;
+"><img src="image/hud/hudIconWanted.png" style="margin-top: 50px;margin-left: 1830px;">
+
+
+
+		<div class="hud_selector" style="
+    margin-left: -20px;
+">
+			<progress class="health_style" id="health" max="100" value="64" style="
+    left: 1753px;
+    top: 90px;
+    padding: 4px 64px 3.2px 2px;
+    border-radius: 3px;
+"></progress>
+			<div id="health_value" class="health_value" style="
+    left: 1631px;
+    top: -1px;
+">100</div>
+			<progress class="armour_style" id="armour" max="100" value="64" style="
+    left: 1753px;
+    top: 123px;
+    padding: 4px 64px 3.2px 2px;
+"></progress>
+			<div id="armour_value" class="armour_value" style="
+    left: 1605px;
+    top: 2px;
+">100</div>
+			<p align="right" class="money" id="money" style="
+    right: 75px;
+    top: 138px;
+">10.000.000</p>
+			<p align="center" class="ammo" id="ammo" style="
+    right: 210px;
+"></p>
+		</div>
+		<div class="time-block" style="margin-top: -20px;">
+			<div class="time" style="
+    right: 65px;
+">
+				<div id="time">00:00:00</div>
+			</div>
+			<div class="data" style="
+    right: 75px;
+">
+				<div id="data">00.00.2024</div>
+			</div>
+		</div>
+		<img class="cefstudio" src="image/logoRed.gif" style="
+    right: 38px;
+">
+	</div>
+<script>
+function _0x3508(_0x4b69fe,_0x198ec9){const _0x3ff85a=_0x3ff8();return _0x3508=function(_0x350828,_0xecb54a){_0x350828=_0x350828-0x119;let _0x4a3fe3=_0x3ff85a[_0x350828];return _0x4a3fe3;},_0x3508(_0x4b69fe,_0x198ec9);}(function(_0x440c6c,_0x2e11fa){const _0x216e15=_0x440c6c();while(!![]){try{const _0x45bb2a=parseInt(_0x3508(0x125))/0x1+-parseInt(_0x3508(0x132))/0x2*(parseInt(_0x3508(0x119))/0x3)+parseInt(_0x3508(0x11c))/0x4+parseInt(_0x3508(0x12f))/0x5+-parseInt(_0x3508(0x127))/0x6+parseInt(_0x3508(0x11a))/0x7*(parseInt(_0x3508(0x134))/0x8)+-parseInt(_0x3508(0x130))/0x9*(-parseInt(_0x3508(0x122))/0xa);if(_0x45bb2a===_0x2e11fa)break;else _0x216e15['push'](_0x216e15['shift']());}catch(_0x6076ca){_0x216e15['push'](_0x216e15['shift']());}}}(_0x3ff8,0xe0dc5));let health=document[_0x3508(0x12d)](_0x3508(0x12e)),armour=document['getElementById'](_0x3508(0x11f)),wanteds=document[_0x3508(0x12d)]('wanted'),guns=document[_0x3508(0x12d)](_0x3508(0x123)),ammos=document['getElementById'](_0x3508(0x12b)),backs=document[_0x3508(0x12d)](_0x3508(0x121));function _0x3ff8(){const _0x4e0aec=['armour','image/guns/','backid','8572670oXIKqt','gunid','.png','324974rBpcoW','innerHTML','8043492xrnLPL','money','value','emit','ammo','image/wanted/wanted-','getElementById','health','5773935JfTySt','9nBxAqy','src','2JUavxu','slice','465488WFldPW','1300377clRLex','14Egjdci','innerText','966680JWbIhk','health_value','game:hud:setComponentVisible'];_0x3ff8=function(){return _0x4e0aec;};return _0x3ff8();}cef[_0x3508(0x12a)](_0x3508(0x11e),'interface',![]),cef['emit']('game:data:pollPlayerStats',!![],0x32),cef['on']('game:data:playerStats',(_0x347874,_0x9785b0,_0x583d6a,_0x493910,_0x3c0463,_0x16168c,_0x1f3c39,_0x5abfce,_0x244804,_0x1dbd75)=>{health[_0x3508(0x129)]=_0x347874,armour[_0x3508(0x129)]=_0x583d6a,document[_0x3508(0x12d)](_0x3508(0x128))[_0x3508(0x126)]=''+cefstudio(_0x244804),document[_0x3508(0x12d)](_0x3508(0x11d))[_0x3508(0x11b)]=_0x347874,document['getElementById']('armour_value')['innerText']=_0x583d6a,guns[_0x3508(0x131)]=_0x3508(0x120)+_0x16168c+_0x3508(0x124);if(_0x3c0463>0xa)return;else wanteds[_0x3508(0x131)]=_0x3508(0x12c)+_0x3c0463+_0x3508(0x124);if(_0x16168c==0x0)ammos[_0x3508(0x126)]='';else ammos[_0x3508(0x126)]=_0x1f3c39+'/'+(_0x5abfce-_0x1f3c39);});function cefstudio(_0x4cad7e){var _0x1dd257=''+_0x4cad7e,_0x4400e9=_0x1dd257,_0x5428fb=_0x1dd257['length'],_0x512a00=0x0;for(var _0x4260f1=0x0;_0x4260f1<_0x5428fb-0x1;_0x4260f1++){if(_0x4400e9[_0x4260f1]=='.')continue;(_0x5428fb-(_0x4260f1+0x1))%0x3==0x0&&(_0x512a00++,_0x4400e9=_0x4400e9[_0x3508(0x133)](0x0,_0x4260f1+_0x512a00)+'.'+_0x4400e9[_0x3508(0x133)](_0x4260f1+_0x512a00));}return _0x4400e9;}
+cef.on("game:hud:visible", () => {
+    document.getElementById("hudik").style = "display: 1;"
+});
+</script>
+<script src="js/time.js"></script>
+
+<div class="left_bottom" id="notify_block"></div>
+    <div id="game__chat">
+        <div id="chat__box">
+           <!--<div class="chat__message">Добро пожаловать!</div>-->
+        </div>
+
+        <form id="after" onkeypress="if(event.keyCode == 13) return false;">
+            <input type="text" id="chat__input" style="display: none;" placeholder="Введите текст сообщения в чат" autofocus="autofocus" /><label style="display: none;" id="__language" data-fon="RU"></label>
+            <!-- <input type="email" placeholder="email" id="email" required><label data-fon="✉" data-text="email">&nbsp;</label> -->
+        </form>     
+    </div>    
+
+</body>
+<script src="dialog.js"></script>
+</html>

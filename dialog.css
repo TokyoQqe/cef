@@ -1,0 +1,200 @@
+body {
+    background-size: cover;
+	overflow-x: hidden;
+}
+
+#dialog_container {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.3;
+    background: rgba(23, 23, 23, 0.7);
+    background-image: url(img/bg.png);
+    background-size: 350px;
+    background-position: right;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 35px 70px;
+    max-width: 800px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.dialogHeader {
+    font-size: 30px;
+    font-weight: 700;
+    color: #3986d3;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	user-select: none;
+}
+
+.clickBtn {
+    background: linear-gradient(100deg, #22a74e, #5bd755);
+    box-shadow: 0 5px 15px rgba(91, 215, 85, 0.7);
+    transition: ease-out 0.3s;
+    padding: 10px 20px;
+    height: 22px;
+    width: 175px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    width: 120px;
+    text-align: center;
+}
+
+.red_btn {
+    background: linear-gradient(100deg, #f94417, #fb882d);
+    box-shadow: 0 5px 15px rgba(249, 68, 23, 0.7);
+    transition: ease-out 0.3s;
+}
+
+.red_btn:hover {
+    box-shadow: none;
+}
+
+.clickBtn:hover {
+    box-shadow: none;
+}
+
+
+
+.dialog_input {
+    width: 100%;
+    background: rgba(23, 23, 23, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.dialogItem {
+    background-color: rgba(17, 16, 16, 0.4);
+    padding: 11px 15px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.dialogItem:hover {
+    background-color: rgba(49, 49, 49, 0.65);
+	/*color: #fff;*/
+}
+
+.tablist_headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    align-self: end;
+
+}
+
+.dialogItemHeader {
+    margin-left: 10px;
+    min-width: 200px;
+
+    margin-right: 10px;
+}
+
+.styleDialogTablist {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10.5pt;
+    color: #fff;
+    border-radius: 9px;
+
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.dialogText {
+	max-height: 350px;
+	width: 100%;
+    overflow-y: auto;  
+}
+
+span {
+	color: var(--i);
+	transition: 0.4s;
+}
+
+.dialogItem:hover span {
+  color: var(--g);
+}
+
+.active_text {
+	color: #252525;
+	/*color: var(--b);*/
+}
+
+.white_back {
+    background: linear-gradient(100deg, #f94417, #fb882d);
+    color: #353535;
+}
+
+.white_back:hover {
+    background: linear-gradient(100deg, #f94417, #fb882d);
+}
+
+.white_back:hover span {
+  color: #252525;
+}
+
+.noback {
+	background: none;
+	border: 0;
+}
+
+::-webkit-scrollbar-button {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 1px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #303030;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(100deg, #f94417, #fb882d);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+::-webkit-resizer {
+    background-image: url('');
+    background-repeat: no-repeat;
+    width: 1px;
+    height: 0px
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}

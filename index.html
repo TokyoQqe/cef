@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Notifical Dev.Maza</title>
+	<link rel="stylesheet" type="text/css" href="../styles/push.css">
+	<p id="ids">123123123</p>
+</head>
+<body>
+	<script src="../js/push.js"></script>
+	<script type="text/javascript">
+		let vas = document.getElementById('ids');
+
+		cef.on("notifical:player:data", (headers, text, colors, hide, time) => {
+			Toast.add({header: headers, body: text, color: '#' + colors, autohide: hide, delay: time});
+		});
+
+		cef.on("notifical:success", (success) => {
+			if ( success ) 
+			{
+				vas.innerHTML = 'Кортез';
+				Toast.add({header: '1', body: '32', color: '#ff0000', autohide: true, delay: 5000});
+			}
+		});
+	</script>
+</body>
+</html>
