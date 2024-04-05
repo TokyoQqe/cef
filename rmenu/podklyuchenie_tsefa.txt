@@ -1,0 +1,67 @@
+public OnGameModeInit()
+{
+	cef_subscribe("ShowNick:try", "HudPlayer");
+	cef_subscribe("Radial:inter", "RadialMenu");
+	return 1;
+}
+public OnPlayerSpawn(playerid)
+{
+	cef_create_browser(playerid, 0x12345, "login.form/test/index.html", false, false);
+	return 1;
+}
+forward HudPlayer(player_id);
+public HudPlayer(player_id)
+{
+	new name[40];
+	GetPlayerName(player_id, name, sizeof(name));
+	cef_emit_event(player_id, "ShowNick:nickname",  CEFSTR(name), CEFINT(player_id));
+}
+
+publics RadialMenu(player_id, const argument[])
+{
+	new inter;
+	sscanf(argument, "i", inter);
+	switch(inter)
+	{
+		case 1:{
+			add_target(player_id, 1);
+		}
+		case 2:{
+			add_target(player_id, 2);
+		}
+		case 3:{
+			add_target(player_id, 3);
+		}
+		case 4:{
+			add_target(player_id, 4);
+		}
+		case 5:{
+			SendClientMessage(player_id, -1, "Вы закрыли радиальное меню!");
+		}
+	}
+	return true;
+}
+
+stock add_target(player_id, target)
+{
+	switch(target)
+	{
+	    case 1:
+		{
+			SendClientMessage(player_id, -1, "Вы запустили двигатель");
+		}
+		case 2:
+		{
+			SendClientMessage(player_id, -1, "Вы включили что-то");
+		}
+		case 3:
+		{
+			SendClientMessage(player_id, -1, "Вы выключили что-то");
+		}
+		case 4:
+		{
+			SendClientMessage(player_id, -1, "Не знаю что делаю вот это вот!");
+		}
+	}
+	return true;
+}	

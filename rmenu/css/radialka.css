@@ -1,0 +1,173 @@
+.radialka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    /* border: 2px solid salmon; */
+    border-radius: 50%;
+}
+
+.radialka .close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+    z-index: 255;
+    border: 6px solid #b63cde;
+}
+
+.close::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    color: #fff;
+    font-size: 98px;
+    font-family: 'Montserrat', sans-serif;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: rgba(182, 60, 222, 0.5);
+}
+
+.test {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+}
+
+.test #fist {
+    position: absolute;
+    top: 5.1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#engine {
+    width: 350px;
+    height: 350px;
+}
+
+#engine::before {
+    content: url(../image/ph_engine-bold.svg);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+}
+
+.test .engine {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    z-index: 200;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.test #two {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.test .lock {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.test #three {
+    position: absolute;
+    top: 49.95%;
+    left: 94.9%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.test .light {
+    position: absolute;
+    top: 49.95%;
+    left: 98%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.test #four {
+    position: absolute;
+    top: 50.1%;
+    left: 5.1%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.test .key {
+    position: absolute;
+    top: 50.1%;
+    left: 2%;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+#fist>path,
+#two>path,
+#three>path,
+#four>path {
+    transition: 0.3s;
+}
+
+#fist>path:hover,
+#two>path:hover,
+#three>path:hover,
+#four>path:hover {
+    fill: rgba(182, 60, 222, 0.8);
+}
+
+
+/* .radialka #fist {
+    position: absolute;
+    bottom: 90px;
+    right: 110px;
+}
+
+.radialka #two {
+    position: absolute;
+    bottom: 90px;
+    right: 260px;
+} */

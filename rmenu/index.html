@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/radialka.css">
+    <link rel="stylesheet" href="css/hud.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- -------- -->
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section id="hud" class="hud" style="display:none;">
+        <div class="top-box">
+            <p class="user" id="nick">j.astrovskiy</p>
+            <span id="id" class="id">13</span>
+            <div class="data-time">
+                <p class="time" id="time">20:55:22</p>
+                <p class="data" id="date">07.05.2023</p>
+            </div>
+            <p class="logo">BLESSEN<br>ONLINE</p>
+        </div>
+        <div class="progress">
+            <div class="heal">
+                <progress value="10" max="100" id="heal"></progress>
+                <label for="heal">
+                    <i class="fa-solid fa-plus"></i>
+                    <span id="healtext">10</span>
+                </label>
+            </div>
+            <div class="armor">
+                <progress value="25" max="100" id="armor"></progress>
+                <label for="armor">
+                    <i class="fa-solid fa-shield"></i>
+                    <span id="armortext">25</span>
+                </label>
+            </div>
+        </div>
+        <div class="money">
+            <p class="cash" id="cash">100 000 000</p>
+            <span></span>
+            <i class="fa-solid fa-ruble-sign"></i>
+        </div>
+    </section>
+
+    <section class="position" id="position" style="display: none;">
+        <i class="fa-solid fa-location-dot"></i>
+        <div class="text">
+            <p class="city" id="city">г.Арзамас</p>
+            <p class="street" id="street">ул. Героев Сталинграда</p>
+        </div>
+    </section>
+
+    <section id="radialka" class="radialka" style="display: none;">
+        <div class="close" onclick="ClickRadial(4);"></div>
+        <div class="test">
+
+            <svg width="364" height="200" viewBox="0 0 364 205" fill="none" xmlns="http://www.w3.org/2000/svg" id="fist" class="fist" onclick="ClickRadial(0)">
+                <path d="M109.622 189.363L3.0211 82.7626C50.6915 35.6495 115.029 9.20584 182.092 9.20583C249.156 9.20583 313.493 35.6495 361.163 82.7626L254.563 189.363C235.167 170.518 209.174 159.955 182.092 159.955C155.01 159.955 129.017 170.518 109.622 189.363Z" fill="black" fill-opacity="0.7" stroke="#b63cde" stroke-width="3"/>
+            </svg>
+            <svg width="364" height="200" viewBox="0 0 364 205" fill="none" xmlns="http://www.w3.org/2000/svg" id="two" onclick="ClickRadial(1);">
+                <path d="M109.622 189.363L3.0211 82.7626C50.6915 35.6495 115.029 9.20584 182.092 9.20583C249.156 9.20583 313.493 35.6495 361.163 82.7626L254.563 189.363C235.167 170.518 209.174 159.955 182.092 159.955C155.01 159.955 129.017 170.518 109.622 189.363Z" fill="black" fill-opacity="0.7" stroke="#b63cde" stroke-width="3"/>
+            </svg>
+            <svg width="364" height="200" viewBox="0 0 364 205" fill="none" xmlns="http://www.w3.org/2000/svg" id="three" onclick="ClickRadial(2);">
+                <path d="M109.622 189.363L3.0211 82.7626C50.6915 35.6495 115.029 9.20584 182.092 9.20583C249.156 9.20583 313.493 35.6495 361.163 82.7626L254.563 189.363C235.167 170.518 209.174 159.955 182.092 159.955C155.01 159.955 129.017 170.518 109.622 189.363Z" fill="black" fill-opacity="0.7" stroke="#b63cde" stroke-width="3"/>
+            </svg>
+            <svg width="364" height="200" viewBox="0 0 364 205" fill="none" xmlns="http://www.w3.org/2000/svg" id="four" onclick="ClickRadial(3);">
+                <path d="M109.622 189.363L3.0211 82.7626C50.6915 35.6495 115.029 9.20584 182.092 9.20583C249.156 9.20583 313.493 35.6495 361.163 82.7626L254.563 189.363C235.167 170.518 209.174 159.955 182.092 159.955C155.01 159.955 129.017 170.518 109.622 189.363Z" fill="black" fill-opacity="0.7" stroke="#b63cde" stroke-width="3"/>
+            </svg>
+            <img src="image/ph_engine-bold.svg" class="engine">
+            <img src="image/ph_lock-bold.svg" class="lock">
+            <img src="image/mdi_car-light-dimmed.svg" class="light">
+            <img src="image/clarity_key-line.svg" class="key">
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

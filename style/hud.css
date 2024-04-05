@@ -1,0 +1,140 @@
+body {
+	background: transparent;
+	color: transparent;
+}
+
+.background {
+	position: absolute;
+	right: 40px;
+	top: 20px;
+}
+
+.guns {
+	position: absolute;
+	display: -webkit-box;
+	top: 80px;
+	right: 88px;
+}
+
+.wanteds {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+progress.health_style {
+	padding: 6px 0px 6.5px 19px;
+}
+
+progress.armour_style, progress.health_style, progress.none_style {
+	position: absolute;
+	border: none;
+	display: flex;
+	top: 93px;
+	right: 258px;
+}
+
+progress.armour_style {
+	position: absolute;
+	top: 118px;
+	padding: 6px 0px 6.2px 38px;
+}
+
+progress.health_style::-webkit-progress-value {
+	background: #ff4c4a;
+}
+progress.health_style::-webkit-progress-bar, progress.armour_style::-webkit-progress-bar {
+	background: #181918;
+}
+progress.armour_style::-webkit-progress-value {
+	background: #ffffff;
+}
+
+progress.none_style {
+	position: absolute;
+	top: 143px;
+	padding: 6px 0px 6.2px 63px;
+}
+progress.none_style::-webkit-progress-value {
+	background: #ff4c4a;
+}
+progress.none_style::-webkit-progress-bar {
+	background: #181918;
+}
+progress.none_style::-webkit-progress-value {
+	background: #ffe631;
+}
+
+.money {
+	position: absolute;
+	top: 148px;
+	right: 255px;
+	font-family: 'Roboto Medium', sans-serif;
+	font-size: 16pt;
+	font-weight: 600;
+	color: #FFF;
+	text-align: right;
+}
+
+.ammo {
+	position: absolute;
+	top: 155px;
+	right: 110px;
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	opacity: 0.6;
+	width: 50px;
+	text-align: center;
+}
+
+.data {
+	position: absolute;
+	top: 53px;
+	right: 250px;
+	width: 200px;
+	color: rgba(255, 255, 255, 0.70);
+	text-align: left;
+	font-family: 'Roboto Light', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+.time {
+	position: absolute;
+	top: 33px;
+	right: 240px;
+	width: 200px;
+	color: #fff;
+	text-align: left;
+	font-family: 'Roboto Medium', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+.health_value {
+	position: absolute;
+	margin: 92px;
+	right: 315px;
+	top: 0px;
+	font-family: 'Roboto Medium', sans-serif;
+	text-align: right;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.armour_value {
+	position: absolute;
+	margin: 118px;
+	right: 270px;
+	top: 0px;
+	font-family: 'Roboto Medium', sans-serif;
+	text-align: right;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+}
+.cefstudio {
+	position: absolute;
+	top: 28px;
+	right: 195px;
+	width: 140px;
+}
